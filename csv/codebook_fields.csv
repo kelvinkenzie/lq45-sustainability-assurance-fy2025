@@ -1,0 +1,36 @@
+Field,Definition,Allowed values,Used in
+Ticker,IDX ticker of the LQ45 constituent.,Text,All
+Company,Company name; former names in brackets.,Text,All
+Sector,IDX-IC sector.,9 IDX-IC sectors,Exhibit 3
+Business group,"Business group with more than one LQ45 member, where one applies. State-owned banks and Telkom are not grouped; see State-owned.",Text or blank,Exhibit 3
+State-owned,Y if the issuer is a state-owned enterprise or the subsidiary of one (e.g. via MIND ID or Pertamina).,Y; N,Exhibit 3
+Report type,Where FY2025 sustainability information is published.,Standalone SR; Integrated in AR,Sample
+Report link,Link to the FY2025 report that was coded.,URL,All
+Date accessed,Date the report was downloaded.,Date,All
+Assurance category,"What the external statement claims to be. 'Independent assurance': gives an assurance or verification conclusion and names a standard, including ISO 14064-3 GHG verifications (Rule 2). 'Verification only': no standard and/or no conclusion. 'None found': no external statement. With more than one statement, the broadest one is coded (Rule 1).",Independent assurance; Verification only; Internal review only; None found,Exhibit 1
+External statement,Calculated. Y if Assurance category is Independent assurance or Verification only.,Y; N,All
+ESG rating cited,Y if the report cites a third-party ESG rating or score. A rating is not assurance (Rule 10). PROPER and awards do not count.,Y; N,Section 02
+Ratings cited,Ratings as cited in the report.,Text; N/A,Section 02
+Provider,"Firm that signed the statement, as written.",Text; Not stated; N/A,Section 10
+Provider type,"Big 4 network = member firm of Deloitte, EY, KPMG or PwC, including Indonesian KAP and advisory entities (Rule 3). Other audit firm (KAP) = other public accounting firms and their networks (Rule 16). Certification/inspection body and Sustainability consultancy as named.",Big 4 network; Other audit firm (KAP); Certification/inspection body; Sustainability consultancy; Not stated; N/A,"Exhibits 4, 6"
+Standard,Standard(s) named in the statement. IAPI SPA 3000/3410 are coded as ISAE 3000/3410 (Rule 13).,ISAE 3000; ISAE 3000 + ISAE 3410; ISAE 3000 + AA1000AS; AA1000AS v3; Other; Not stated; N/A,Exhibit 4
+AA1000 type,Only where AA1000AS is used: Type 1 (principles) or Type 2 (principles and specified performance information) (Rule 14).,Type 1; Type 2; N/A,Section 10
+Assurance level,Level as stated. ISAE uses limited or reasonable; AA1000AS uses moderate or high. Levels are not translated between standards (Rule 24).,Limited; Reasonable; Moderate (AA1000); High (AA1000); Not stated; N/A,Exhibit 4
+Subject matter,"Whole report, or the indicators named in the statement. Explicit 'all information in the report' = Whole report (Rule 19).",Whole report; Selected indicators; GHG only; N/A,Section 05
+Scope 1 disclosed / Scope 2 disclosed / Scope 3 disclosed,"Coded for all 45 issuers. Y if the report gives an absolute FY2025 figure in tCO2e for that scope; intensity only = N (Rules 5, 6, 18).",Y; N; N/A,Exhibit 5
+Scope 1 assured / Scope 2 assured / Scope 3 assured,Y if the scope is explicitly in the subject matter of any external statement in the report (Rule 1). Only part of a scope assured = N (Rule 17).,Y; N; N/A,Exhibit 5
+Energy assured / Water assured / Waste assured / Social assured,Y if explicitly in the assured subject matter. Generic labels such as Environmental management = N (Rule 15).,Y; N; N/A,Section 05
+Other assured topics,"Other assured topics, as listed in the statement.",Text; N/A,Section 10
+Independence statement,The provider itself declares independence (Rule 21).,Y; N; Not clear; N/A,Exhibit 6 (C1)
+Competence statement,The statement describes the team's qualifications. Shown for information; not scored (Rule 22).,Y; N; N/A,Section 06
+QM or ethics reference,The statement names a quality management standard (e.g. ISQM 1) or an ethics code (e.g. IESBA). Generic wording = Not clear (Rule 23).,Y; N; Not clear; N/A,Exhibit 6 (C2)
+Conclusion,"Unmodified, Modified, or Not clear where the conclusion is not visible or not explicit (Rule 26).",Unmodified; Modified; Not clear; N/A,Exhibit 6 (C5)
+Figures listed,"Y if any statement in the report lists the figures it assured, including in an appendix that forms part of it (Rules 1, 8, 26).",Y; N; N/A,Exhibit 6 (P2)
+Scope 1 figures listed / Scope 2 figures listed / Scope 3 figures listed,Y if a statement lists the assured figure for that scope. Added for the public release so that Exhibit 5 can be counted by scope.,Y; N; N/A,Exhibit 5
+Figures match report,Only where figures are listed: do they equal the report body (Rule 8)?,Y; N; Partly; N/A,Section 05
+Assurance page reference,"PDF page as shown by the PDF viewer, not the printed page number (Rule 4).",Text,All
+C1 Independence ... C5 Conclusion,"Calculated readiness criteria, 1 = met, 0 = not met, blank = no external statement. 'Not clear' counts as not met (Rule 28). Definitions in the Exhibit 6 tab.",1; 0; blank,Exhibit 6
+Core score,Calculated. C1 + C2 + C3 + C4 + C5.,0 to 5,Exhibit 6
+P1 Scope 1 and 2 / P2 Figures,Calculated PSPK criteria. P1 = Scope 1 assured and Scope 2 assured (or not applicable). P2 = Figures listed.,1; 0; blank,Exhibit 6
+PSPK score / Total score,"Calculated. P1 + P2, and Core score + PSPK score.",0 to 2; 0 to 7,Exhibit 6
+ISSA-ready,Calculated. Y if Core score = 5.,Y; N; blank,"Exhibits 1, 6"
