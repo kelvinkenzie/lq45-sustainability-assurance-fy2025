@@ -8,6 +8,7 @@ This is a personal portfolio project, not a formal study.
 
 | File | Contents |
 |---|---|
+| `Final_Report.pdf` | The full report |
 | `LQ45_Assurance_FY2025_Data.xlsx` | The full workbook. Every number in the report traces to a formula here. |
 | `csv/data.csv` | One row per issuer: report, assurance statement, provider, standard, level, subject matter, GHG scopes, and readiness scores. |
 | `csv/ghg_reconciliation.csv` | Each report with GHG data, checked against itself. Anonymised. |
